@@ -1,0 +1,9 @@
+1. Remember to always check for deadlocks. This includes any three of the adjacent blocks being obstacles and any two of them that share a common vertex being obstacles. 
+
+2. Measure the closest distance of the robot to any box so that the robot always move towards boxes instead of away from them. 
+
+3. Check if an obstacle is between any given box and the closest allowed storage. If so, raise count by two.
+
+4. Moving towards the closest allowed storage is not always optimal; sometimes the only path from a box to its allowed storage is to make a detour, which I have not yet found a way to implement.
+
+5. Ideally the “innermost” storage point should be taken care of first. Otherwise a solution might not exist once that storage point is no longer accessible by its allowed boxes.
